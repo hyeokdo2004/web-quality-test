@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>웹품질 QA 테스트 페이지</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; line-height: 1.8; }
+    h1 { color: #2c3e50; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; }
+    a, img { display: block; margin-top: 5px; }
+    .desc { color: #555; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>웹품질 QA 테스트 페이지</h1>
+  <p>아래는 각 항목별로 테스트 가능한 링크 및 리소스입니다.</p>
+  <ul>
+    <li>
+      <strong>1️⃣ 깨진 링크 (HTML / 404)</strong>
+      <div class="desc">400번대 에러(403 제외) 발생하는 html 링크</div>
+      <a href="https://hyeokdo2004.github.io/web-qulity-test/webQualityTest.html" target="_blank">https://777sy777-prog.github.io/web-qulity-test/webQualityTest.html</a>
+    </li>
+
+    <li>
+     <strong>2️⃣ 깨진 첨부 파일 (File / 404)입미다</strong>
+      <div class="desc">400번대 에러(403 제외) 발생하는 첨부 파일 링크</div>
+      <a href="https://hyeokdo2004.github.io/web-quality-test/files/brokenDocument.xlsx" 
+        download="brokenDocument.xlsx"
+        target="_blank">
+        깨진 엑셀 파일 테스트 (404 File)
+      </a>
+    </li>
+
+    <li>
+      <strong>3️⃣ 크기가 큰 페이지 (HTML / 10000byte 초과)</strong>
+      <div class="desc">10,000byte 넘는 HTML 페이지</div>
+      <a href="https://hyeokdo2004.github.io/web-quality-test/heavy/largePage.html" target="_blank">
+        https://hyeokdo2004.github.io/web-quality-test/heavy/largePage.html
+      </a>
+    </li>
+
+    <li>
+      <strong>4️⃣ 응답이 느린 페이지 (HTML / 2500ms 초과예ㅖㅖㅖㅖ)</strong>
+      <div class="desc">응답 시간 지연 테스트용 페이지</div>
+      <a href="https://hyeokdo2004.github.io/web-quality-test/slow/slowPage.html" target="_blank">
+        https://hyeokdo2004.github.io/web-quality-test/slow/slowPage.html
+      </a>
+    </li>
+
+    <li>
+      <strong>5️⃣ 깨진 이미지 (Image / 404)</strong>
+      <div class="desc">404 발생하는 이미지 테스트</div>
+      <img src="https://hyeokdo2004.github.io/web-quality-test/images/brokenImage.html" 
+           alt="깨진 이미지 테스트" width="500" height="1000">
+      <p class="desc">이미지가 로드되지 않으면 깨진 이미지로 탐지됩니다.</p>
+    </li>
+  </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
