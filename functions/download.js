@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 exports.handler = async function(event, context) {
+  // 루트 기준 files 폴더
   const filePath = path.join(process.cwd(), "files", "brokenDocument.xlsx");
 
   try {
@@ -18,7 +19,7 @@ exports.handler = async function(event, context) {
     };
 
   } catch (err) {
-    console.error(err);
+    console.error("파일 읽기 실패:", err);
     return {
       statusCode: 500,
       body: "파일 읽기 실패"
