@@ -1,0 +1,14 @@
+# Netlify Redirect 설정
+[[redirects]]
+  from = "/files/brokenDocument.xlsx"
+  to = "/404"
+  status = 404
+  force = true
+  headers = { "Content-Type" = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }
+
+[[redirects]]
+  from = "/files/brokenFile.pdf"
+  to = "/404"
+  status = 404
+  force = true
+  headers = { "Content-Type" = "application/pdf" }
